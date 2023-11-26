@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.custom-card {
+  width: 15vw;
+  margin: 2vh 2vw;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  transition: all 0.5s ease;
+}
+
+.custom-card:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+    1px 6px 12px rgba(39, 44, 49, 0.04);
+}
+
+.custom-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-container {
+  position: fixed;
+  height: 53.5vh;
+  width: 85vw;
+  top: 10vh;
+  left: 7%;
+  background-color: #fff;
+  display: none;
+  border: 2px solid #333;
+  overflow: hidden;
+  z-index: 2 !important;
+}
+
+.modal-container:hover {
+  transform: translate3D(0, -1px, 0) scale(1.01);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+    1px 6px 12px rgba(39, 44, 49, 0.04);
+}
+
+.film-year {
+  font-size: 14px;
+}
+
+.image-poster-modal {
+  position: absolute;
+  left: 64vw;
+  margin-top: 0vh;
+  margin-bottom: 2vh;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1500px) {
+    .image-poster-modal {
+      left: 65vw;
+       /* Adjust as needed for smaller screens */
+    }
+  }
+
+  @media only screen and (min-height: 900px) {
+    .image-poster-modal {
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+
+.input-search {
+  position: absolute;
+  left: 45vw;
+  height: 7vh !important;
+}
+
+.search-button {
+  position: absolute;
+  top: 12.5vh;
+  right: 18vw;
+  height: 7vh;
+  width: 10vw;
+}
+
+@media only screen and (min-height: 900px) {
+    .search-button {
+        top: 10vh;
+    }
+  }
+
+
+.close-button {
+  top: 2vh;
+  right: 25vw;
+}
+
+.spinner-none {
+  display: none;
+}
+
+.spinner-show {
+  display: block;
+}
+
+.my-footer {
+    width: 100%;
+    position: fixed; 
+    bottom: 0
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/scripts.js"></script>
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/js/style.css" />
+  </head>
+  <body>
+    <nav id="myNav" class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a style="font-size: 140%" class="navbar-brand ms-5" href="#"
+          >Movie Searcher API</a
+        >
+      </div>
+    </nav>
+    <div id="myFormSearch" style="height: 30vh" class="mt-5">
+      <form class="d-flex h-50" id="search-form" role="search">
+        <input
+          class="form-control mt-5 w-50 text-center top-25 translate-middle input-search"
+          type="search"
+          aria-label="Search"
+          id="search-input"
+        />
+        <button
+          class="btn btn-outline-primary mt-4 search-button"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        id="spinnerLoading"
+        class="spinner-border text-primary start-50 position-absolute spinner-none"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      ></div>
+    </div>
+
+    <div
+      class="container custom-container"
+      style="margin-left: 7vw"
+      id="movies-container"
+    ></div>
+
+    <div class="modal-container h-3" id="modal-container">
+      <div class="row h-100">
+        <div class="col-9 p-5">
+          <div class="d-flex align-items-center">
+            <h2 style="font-weight: bold" id="movieTitle"></h2>
+            <span id="releaseYear" class="p-2 film-year"></span>
+          </div>
+          <h6 id="movieDirector"></h6>
+          <h6 id="moviePlot"></h6>
+
+          <h4 style="font-weight: bold" class="mt-4">Ratings</h4>
+          <ul id="ratings-list"></ul>
+          <h6></h6>
+
+          <button
+            type="button"
+            id="closeButton"
+            class="btn btn-lg btn-outline-danger position-absolute mt-4 close-button"
+          >
+            Close
+          </button>
+        </div>
+        <div class="col-3">
+          <div class="image-poster-modal" id="img"></div>
+        </div>
+      </div>
+    </div>
+    <nav
+      id="myFooter"
+      class="navbar navbar-expand-lg bg-light my-footer"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          style="
+            position: relative;
+            left: 38vw;
+            font-style: italic;
+            opacity: 0.2;
+            font-size: 115%;
+          "
+          href="#"
+          >Mateus Rosengarten Mauricio. 2023</a
+        >
+      </div>
+    </nav>
+  </body>
+</html>
